@@ -168,26 +168,24 @@
   "eslint.options": {
     "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
   //
   // [Extension]: stylelint
   //
+  // 取消系统默认的检查
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "stylelint.enable": false,
   "stylelint.packageManager": "pnpm",
   "stylelint.validate": [
     "css",
     "less",
     "scss",
-    "postcss",
-    "vue",
-    "javascript",
-    "typescript"
+    "postcss"
+    //"vue",
+    //"javascript",
+    //"typescript"
   ],
   //
   // [Extension]: markdownlint

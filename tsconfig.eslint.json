@@ -4,5 +4,5 @@
     "noEmit": true,
     "allowJs": true
   },
-  "include": ["src", "vite.config.ts", ".eslintrc.cjs", "prettier.config.cjs"]
+  "include": ["src", "vite.config.ts", ".eslintrc.cjs", "prettier.config.cjs", "stylelint.config.cjs"]
 }

@@ -29,3 +29,6 @@ dist-ssr
 
 # ESLint Cache File
 .eslintcache
+
+# Stylelint Cache File
+.stylelintcache
