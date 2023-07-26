@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    // Catch linting errors as you write
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "davidanson.vscode-markdownlint",
+    // Format files:
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode"
+  ]
+}

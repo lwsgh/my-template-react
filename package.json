@@ -1,0 +1,39 @@
+{
+  "name": "my-template-react",
+  "version": "0.0.0",
+  "private": true,
+  "keywords": [
+    "React",
+    "Typescript",
+    "Vite"
+  ],
+  "homepage": "https://github.com/lwsgh/my-template-react",
+  "license": "MIT",
+  "author": {
+    "name": "Li Wei",
+    "email": "liwei.crazy@gmail.com"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "volta": {
+    "node": "18.17.0"
+  }
+}
