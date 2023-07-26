@@ -16,7 +16,10 @@
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
+    "commit": "czg",
+    "cz": "czg",
     "dev": "vite",
+    "lint:commit": "commitlint --edit",
     "lint:es": "eslint --fix --ext .js,.jsx,.ts,.tsx --cache --format=pretty ./src",
     "lint:format": "prettier --write --ignore-unknown --log-level warn \"src/**/*.{js,jsx,ts,tsx,json,css,scss,less,postcss,html,md}\"",
     "lint:style": "stylelint --fix --cache --allow-empty-input \"src/**/*.{css,less,scss,html}\"",
@@ -24,17 +27,26 @@
     "prepare": "husky install",
     "preview": "vite preview"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "cz-git": "^1.7.0",
+    "czg": "^1.7.0",
     "eslint": "^8.45.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
