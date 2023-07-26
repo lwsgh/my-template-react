@@ -1,4 +1,43 @@
 module.exports = {
+  plugins: [
+    'prettier-plugin-packagejson',
+    '@trivago/prettier-plugin-sort-imports',
+    'prettier-plugin-organize-attributes',
+  ],
+
+  //
+  // Plugin: @trivago/prettier-plugin-sort-imports
+  //
+  importOrder: [
+    '^vite',
+    '^react',
+    '<THIRD_PARTY_MODULES>',
+    '^@components/(.*)$',
+    '^@hooks/(.*)$',
+    '^@pages/(.*)$',
+    '^@services/(.*)$',
+    '^@utils/(.*)$',
+    '^[./]',
+  ],
+  // 启用或禁用按照importOrder对排序后的导入组进行换行分隔
+  importOrderSeparation: true,
+  // 启用或禁用导入声明中规范符号的排序
+  importOrderSortSpecifiers: true,
+  // 启用或禁用将命名空间限定符排序到导入组的顶部
+  importOrderGroupNamespaceSpecifiers: true,
+  // 用于在排序算法中启用对每个匹配组内的导入进行大小写不敏感的排序。
+  importOrderCaseInsensitive: true,
+
+  //
+  // Plugin: prettier-plugin-organize-attributes
+  //
+  attributeGroups: ['$CODE_GUIDE'],
+  attributeSort: 'ASC',
+  attributeIgnoreCase: false,
+
+  //
+  // Perttier Rules
+  //
   // 行尾需要有分号
   semi: true,
   // 使用单引号
@@ -32,8 +71,6 @@ module.exports = {
   embeddedLanguageFormatting: 'auto',
   // html, vue, jsx 中每个属性占一行
   singleAttributePerLine: false,
-  // 如果项目中存在 .editorconfig 文件, 使用
-  editorconfig: true,
   // 一行最多 120 字符, 使用 editorconfig 中 max_line_length 替代
   // printWidth: 120,
   // 使用 2 个空格缩进, 使用 editorconfig 中 indent_size 替代

@@ -17,25 +17,38 @@
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
-    "preview": "vite preview",
-    "lint:es": "eslint --fix --ext .js,.jsx,.ts,.tsx --cache ./src",
+    "lint:es": "eslint --fix --ext .js,.jsx,.ts,.tsx --cache --format=pretty ./src",
+    "lint:format": "prettier --write --ignore-unknown --log-level warn \"src/**/*.{js,jsx,ts,tsx,json,css,scss,less,postcss,html,md}\"",
     "lint:ts": "tsc --noEmit",
-    "lint:format": "prettier --write --loglevel warn \"src/**/*.{js,jsx,ts,tsx,json,css,scss,less,postcss,html,md}\""
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-formatter-pretty": "^5.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "^3.0.0",
+    "prettier-plugin-organize-attributes": "^1.0.0",
+    "prettier-plugin-packagejson": "^2.4.5",
     "typescript": "^5.1.6",
     "vite": "^4.4.7"
   },
