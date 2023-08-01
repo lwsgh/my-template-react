@@ -8,6 +8,13 @@ public
 .tsbuildinfo
 .stylelintcache
 
+**/*.sh
+**/*.svg
+**/*.ejs
+
 package-lock.json
 pnpm-lock.yaml
+pnpm-workspace.yaml
 CHANGELOG.md
+
+.DS_Store

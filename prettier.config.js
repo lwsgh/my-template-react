@@ -3,22 +3,13 @@ export default {
     'prettier-plugin-packagejson',
     '@trivago/prettier-plugin-sort-imports',
     'prettier-plugin-organize-attributes',
+    'prettier-plugin-tailwindcss', // make sure at last
   ],
 
   //
   // Plugin: @trivago/prettier-plugin-sort-imports
   //
-  importOrder: [
-    '^vite',
-    '^react',
-    '<THIRD_PARTY_MODULES>',
-    '^@components/(.*)$',
-    '^@hooks/(.*)$',
-    '^@pages/(.*)$',
-    '^@services/(.*)$',
-    '^@utils/(.*)$',
-    '^[./]',
-  ],
+  importOrder: ['^vite', '^react', '<THIRD_PARTY_MODULES>', '^@components/(.*)$', '^@hooks/(.*)$', '^@pages/(.*)$', '^@services/(.*)$', '^@utils/(.*)$', '^[./]'],
   // 启用或禁用按照importOrder对排序后的导入组进行换行分隔
   importOrderSeparation: true,
   // 启用或禁用导入声明中规范符号的排序
@@ -34,6 +25,11 @@ export default {
   attributeGroups: ['$CODE_GUIDE'],
   attributeSort: 'ASC',
   attributeIgnoreCase: false,
+
+  //
+  // Plugin: @trivago/prettier-plugin-tailwindcss
+  //
+  tailwindConfig: './tailwind.config.cjs',
 
   //
   // Perttier Rules
