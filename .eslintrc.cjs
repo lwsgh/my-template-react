@@ -34,17 +34,11 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     // 禁止将变量或属性的类型设置为 any
     '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-unsafe-member-access': 'off',
-    '@typescript-eslint/no-unsafe-argument': 'off',
-    '@typescript-eslint/no-unsafe-call': 'off',
-    '@typescript-eslint/no-unsafe-return': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-expressions': 'off',
 
     //
     // eslint-plugin-react
     //
-    // React17开始不再需要 import React from 'react';
+    // React17开始不再需要
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
 
@@ -83,6 +77,7 @@ module.exports = {
   ],
   ignorePatterns: [
     'build',
+    'config',
     'coverage',
     'dist',
     'public',
